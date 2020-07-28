@@ -15,6 +15,14 @@ class App extends React.Component {
     //* decided that saving colors would not be basic functionality
     // * Maybe something to look at later!
   }
+  toggle() {
+    var x = document.getElementById("about");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
   create () {
     return '#' +  Math.random().toString(16).substr(-6);
   }
@@ -43,6 +51,13 @@ class App extends React.Component {
       <div className= 'parent'>
         <div className= 'title'>
           <h2>RANDOM COLOR PALETTE GENERATOR</h2>
+        </div>
+        <div className= 'info'>
+          <button onClick={this.toggle.bind(this)}>Click to learn how to use: </button>
+          <div className="hidden" id="about">
+            <p>Choose from the drop down how many colors you need. </p>
+            <p>Don't like a color? Click to generate another one.</p>
+          </div>
         </div>
         <div className ='heading'>
           <label className= 'label'>Choose how many colors: </label><br></br> <br></br>
