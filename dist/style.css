@@ -1,0 +1,53 @@
+.parent {
+  margin: auto;
+  padding: 5px;
+  max-width: 35%;
+}
+.mainDiv {
+  display: flex;
+  flex-flow: wrap row;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 24px;
+  justify-content: center;
+}
+.color {
+  color: white;
+  border-radius: 50%;
+  font-size: 20px;
+  height: 130px;
+  width: 130px;
+  margin: 5px;
+}
+
+.colorCode {
+  margin: 20px;
+}
+
+.title {
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 25px;
+  /* font-weight: bold; */
+}
+
+.label {
+  /* text-align: center; */
+  /* justify-content: center; */
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 17px;
+  padding-left: 30px;
+  /* color: #feb018; */
+}
+
+.heading {
+  margin: auto;
+  padding: 10px;
+  max-width: 60%;
+}
+
+select {
+  width: 300px;
+  text-align-last:right;
+  padding-right: 125px;
+}
