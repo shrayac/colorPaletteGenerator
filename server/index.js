@@ -7,8 +7,6 @@ app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 app.use(express.static(__dirname + '/../dist'));
 
-app.listen(port, () => {
-  console.log(`listening on port ${port}`)
-});
+app.listen(process.env.PORT || 5000)
 
 module.exports = app;
