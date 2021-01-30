@@ -1,22 +1,43 @@
-.parent {
-  margin: auto;
-  padding: 5px;
-  max-width: 35%;
+body {
+  background-image: url("backgroundcolorful.png");
+  background-size: auto;
 }
+
+.parent {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 10px solid rgb(250, 217, 214);
+  border-radius: 10%;
+  padding: 10px;
+  max-width: 1500px;
+  min-width: 500px;
+  min-height: 600px;
+  box-shadow: 15px 15px rgba(128, 48, 48, 0.15);
+  transition: all .4s ease;
+}
+
 .mainDiv {
+  background-color: white;
   display: flex;
   flex-flow: wrap row;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
   font-family: 'Courier New', Courier, monospace;
   font-size: 24px;
   justify-content: center;
+  align-items: center;
+  max-width: 500px;
 }
 .color {
   color: white;
   border-radius: 50%;
   font-size: 20px;
-  height: 130px;
-  width: 130px;
+  height: 120px;
+  width: 120px;
   margin: 5px;
 }
 
@@ -24,25 +45,15 @@
   margin: 20px;
 }
 
-.title {
+h1 {
   text-align: center;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 25px;
-  /* font-weight: bold; */
-}
-
-.label {
-  /* text-align: center; */
-  /* justify-content: center; */
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 17px;
-  padding-left: 30px;
-  /* color: #feb018; */
+  color:rgb(230, 189, 113);
+  font-family: 'Vibur', cursive;
+  font-size: 60px;
 }
 
 .heading {
   margin: auto;
-  padding: 10px;
   max-width: 60%;
 }
 
@@ -50,21 +61,25 @@ select {
   width: 300px;
   text-align-last:right;
   padding-right: 125px;
+  font-family:'Courier New', Courier, monospace;
 }
 
-.hidden{
-  display: none;
+.tooltip {
+  position: relative;
+  display: inline-block;
 }
 
-.info {
-  margin: auto;
-  max-width: 35%;
-  padding: 5px;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 12px;
+.tooltip .tooltiptext {
+  visibility: hidden;
+  background-color: rgb(255, 255, 255);
+  color: rgb(250, 186, 114);
+  text-align: right;
+  padding: 5px 0;
+  border-radius: 6px;
+  bottom: 120%;
+  left: 50%;
 }
-button {
-  background-color: transparent;
-  border: none;
-  font-family: 'Courier New', Courier, monospace;
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
