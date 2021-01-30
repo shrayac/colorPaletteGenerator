@@ -37,7 +37,7 @@ class App extends React.Component {
     return (
       <div>
         <div className='question'>
-          <div className='tooltip'><i class="far fa-question-circle"></i>
+          <div className='tooltip'><i className="far fa-question-circle"></i>
             <span className='tooltiptext'>Click to change a specific color</span>
           </div>
         </div>
